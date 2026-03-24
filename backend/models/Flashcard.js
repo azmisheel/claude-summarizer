@@ -1,0 +1,45 @@
+import mongoose from "mongoose";
+
+const flashcardSchema = new mongoose.Schema({
+    userId : {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        required: true
+    },
+    documentId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Document",
+        required: true
+    },
+    cards: [{
+        question: {
+            type: String,
+            required: true
+        },
+        answer: {
+            type: String,
+            required: true
+        },
+        difficulty: {
+            type: String,
+            enum: ['easy', 'medium', 'hard'],
+            default: 'medium'
+        },
+        lastReviewed: {
+            type: Date,
+            default: null
+        },
+        isStarred: {
+            type: Boolean,
+            default: false
+        }
+    }]
+}, { timestamps: true });
+
+
+//Index for faster retrieval of quizzes by user and document
+flashcardSchema.index({ userId: 1, documentId: 1 });
+
+const Flashcard = mongoose.model("Flashcard", flashcardSchema);
+
+export default Flashcard;
