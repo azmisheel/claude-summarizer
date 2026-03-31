@@ -33,7 +33,7 @@ const Sidebar = (isSidebarOpen, toggleSidebar) => {
       {/* Logo and close button */}
       <div className="flex items-center justify-between h-16 px-5 border-b border-slate-700/60">
         <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 shadow-md shadow-violet-500/20">
+          <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 shadow-md shadow-violet-500/20">
             <BrainCircuit className="text-white" size={20} strokeWidth={2.5} />
           </div>
           <h1 className="text-sm md:text-base font-bold text-white tracking-tight">Cognote</h1>
@@ -52,7 +52,7 @@ const Sidebar = (isSidebarOpen, toggleSidebar) => {
             onClick={toggleSidebar}
             className={({ isActive }) =>
               `group flex items-center gap-3 px-4 py-2.5 text-sm font-semibold rounded-xl transition-all duration-200
-              ${isActive ? "bg-gradient-to-r from-violet-500 to-purple-600 text-white shadow-lg shadow-violet-500/25" : "text-slate-400 hover:bg-slate-800 hover:text-white"}`
+              ${isActive ? "bg-gradient-to-r from-indigo-500 to-violet-600 text-white shadow-lg shadow-violet-500/25" : "text-slate-400 hover:bg-slate-800 hover:text-white"}`
             }
           >
             {({ isActive }) => (

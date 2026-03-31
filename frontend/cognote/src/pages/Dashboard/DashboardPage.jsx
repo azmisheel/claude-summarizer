@@ -36,7 +36,7 @@ const DashboardPage = () => {
 
   if (!dashboardData || !dashboardData.overview) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br bg-slate-950 flex items-center justify-center">
         <div className="text-center">
           <div className="inline-flex items-center jsutify-center w-16 h-16 rounded-2xl bg-slate-100 mb-4">
             <TrendingUp className="w-8 h-8 text-slate-400" />
@@ -111,7 +111,7 @@ return (
       {/* Recent Activity */}
       <div className="bg-slate-800/80 backdrop-blur-xl border border-slate-700/60 rounded-2xl shadow-xl shadow-slate-900/50 p-8">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center">
             <Clock className="w-5 h-5 text-white" strokeWidth={2} />
           </div>
           <h3 className="text-xl font-medium text-white tracking-tight">

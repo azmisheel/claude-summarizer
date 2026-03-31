@@ -42,7 +42,7 @@ const RegisterPage = () => {
         <div className="bg-slate-800/80 backdrop-blur-xl border border-slate-700/60 rounded-3xl shadow-xl p-10">
           {/* Header */}
           <div className="text-center mb-10">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-linear-to-br from-violet-500 to-purple-600 shadow-lg violet-500/25 mb-6">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-linear-to-br from-indigo-500 to-violet-600 shadow-lg violet-500/25 mb-6">
               <BrainCircuit className="w-7 h-7 text-white" strokeWidth={2} />
             </div>
             <h1 className="text-2xl font-medium text-white tracking-tight mb-2">
@@ -137,7 +137,7 @@ const RegisterPage = () => {
             <button
               onClick={handleSubmit}
               disabled={loading}
-              className="mt-6 group relative w-full bg-linear-to-r from-violet-600 to-purple-600 hover:from-violet-600 hover:to-purple-400 active:scale-[0.98] text-white text-sm font-semibold rounded-xl h-12 transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed shadow-lg violet-500/25 overflow-hidden"
+              className="mt-6 group relative w-full bg-linear-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 active:scale-[0.98] text-white text-sm font-semibold rounded-xl h-12 transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed shadow-lg violet-500/25 overflow-hidden"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 {loading ? (
@@ -164,7 +164,7 @@ const RegisterPage = () => {
               Already have an account?{" "}
               <Link
                 to="/login"
-                className="font-semibold text-violet-600 hover:text-purple-400 transition-colors duration-200"
+                className="font-semibold text-indigo-500 hover:text-violet-700 transition-colors duration-200"
               >
                 Sign in
               </Link>
